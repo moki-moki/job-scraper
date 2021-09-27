@@ -24,7 +24,7 @@ const getData = async () => {
       .replace(/\s\s+/g, " ");
     const extension = "https://www.helloworld.rs";
     const link = extension + $(el).find(".job-link").attr("href");
-    const tags = $(el).find(".preview").text().repgace(/\s\s+/g, " ");
+    const tags = $(el).find(".preview").text().replace(/\s\s+/g, " ");
 
     const job = {
       jobTitle: jobName,
